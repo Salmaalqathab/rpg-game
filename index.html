@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RPG Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="handlers.setTrackers()">
+
+    <h1>Dungeon Crawl</h1>
+
+    <div id="wrapper">
+
+        <div id="leftBlock">
+            <div id="heroTextBar">
+                <p></p>
+            </div>
+            <br>
+
+            <div id="enemyTextBar">
+                <p></p>
+            </div>
+            <br>
+
+            <div id="spellTextBar">
+                <p></p>
+            </div>
+        </div>
+
+
+
+        <div id="centerBlock">
+            <div>
+                <h2 id="enemyName">Stage 1- Orc</h2>
+                <progress id="enemyHealthBar" value="60" max="60"></progress>
+            </div>
+
+            <div>
+                <img id="enemyImage" src="https://www.dropbox.com/s/2ge2wgfu7xxn9gf/Orc.-resized.png?raw=1">
+            </div>
+
+            <div>
+                <progress id="heroHealthBar" value="50" max="50"></progress>
+            </div>
+
+            <div>
+                <progress id="heroManaBar" value="50" max="50"></progress>
+            </div>
+
+            <div id="healthAndMagic">
+            </div>
+
+            <div id="actionButtons">
+                <button onclick="battle.attack()">Attack</button>
+                <button onclick="battle.firebolt()">Firebolt</button>
+                <button onclick="battle.heal()">Heal</button>
+            </div>
+
+            <div id="actionButtons2">
+            </div>
+
+            <div id="tempElements">
+                <br>
+            </div>
+        </div>
+
+        <div id="rightBlock">
+            <table>
+                <tr>
+                    <td>Hero Level:</td>
+                    <td id="level"></td>
+                </tr>
+                <tr>
+                    <td>Str:</td>
+                    <td id="str"></td>
+                </tr>
+                <tr>
+                    <td>Dex:</td>
+                    <td id="dex"></td>
+                </tr>
+                <tr>
+                    <td>Con:</td>
+                    <td id="con"></td>
+                </tr>
+                <tr>
+                    <td>Wis:</td>
+                    <td id="wis"></td>
+                </tr>
+                <tr>
+                    <td>Armor Class:</td>
+                    <td id="ac"></td>
+                </tr>
+                <tr>
+                    <td>Mana Regen:</td>
+                    <td id="regen"></td>
+                </tr>
+                <tr>
+                    <td>Life steal:</td>
+                    <td id="lifeSteal"></td>
+                </tr>
+                <tr>
+                    <td>Slow:</td>
+                    <td id="slow"></td>
+                </tr>
+                <tr>
+                    <td>StrBoost:</td>
+                    <td id="enhanceStr"></td>
+                </tr>
+                <tr>
+                    <td>DexBoost:</td>
+                    <td id="enhanceDex"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
